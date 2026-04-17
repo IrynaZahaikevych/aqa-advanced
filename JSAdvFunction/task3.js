@@ -1,5 +1,5 @@
 function divide(numerator, denominator) {
-    if (typeof numerator !== 'number' || typeof denominator !== 'number') {
+  if (typeof numerator !== "number" || typeof denominator !== "number") {
     throw new Error("Аргументи мають бути числами");
   }
 

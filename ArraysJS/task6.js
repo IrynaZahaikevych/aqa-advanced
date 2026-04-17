@@ -7,5 +7,5 @@ console.log(numbersList);
 console.log(sortedList);
 
 // Якщо потрібно вивести масиви в один рядок:
-console.log(`[${numbersList.join(', ')}]`);
-console.log(`[${sortedList.join(', ')}]`);
+console.log(`[${numbersList.join(", ")}]`);
+console.log(`[${sortedList.join(", ")}]`);

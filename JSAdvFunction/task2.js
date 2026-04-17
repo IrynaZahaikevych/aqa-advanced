@@ -1,5 +1,5 @@
 function countDown(num) {
-    console.log(num);
+  console.log(num);
 
   if (num > 0) {
     countDown(num - 1);
