@@ -8,8 +8,7 @@ stringVar = "Ірина";
 numberVar = 35;
 booleanVar = true;
 nullVar = null;
-undefinedVar = undefined;  // можна пропустити цей рядок і не присвоювати undefined
-
+undefinedVar = undefined; // можна пропустити цей рядок і не присвоювати undefined
 
 // Скорочений варіант:
 
@@ -18,7 +17,6 @@ undefinedVar = undefined;  // можна пропустити цей рядок 
 // const booleanVar = true;
 // const nullVar = null;
 // const undefinedVar = undefined;   // можна не призначати, якщо використовувати let
-
 
 console.log(stringVar);
 console.log(numberVar);

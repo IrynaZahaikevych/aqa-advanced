@@ -1,3 +1,3 @@
-import chalk from 'chalk';
+import chalk from "chalk";
 
-console.log(chalk.green.bold('Привіт, Романе! ') + chalk.magenta('Як твої справи?'));
+console.log(chalk.green.bold("Привіт, Романе! ") + chalk.magenta("Як твої справи?"));

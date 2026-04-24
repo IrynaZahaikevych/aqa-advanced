@@ -1,7 +1,7 @@
 class ApiService {
   async fetchTodo() {
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+      const response = await fetch("https://jsonplaceholder.typicode.com/todos/1");
       return await response.json();
     } catch (error) {
       console.error("Помилка при отриманні todo:", error);
@@ -10,7 +10,7 @@ class ApiService {
 
   async fetchUser() {
     try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users/1');
+      const response = await fetch("https://jsonplaceholder.typicode.com/users/1");
       return await response.json();
     } catch (error) {
       console.error("Помилка при отриманні user:", error);
@@ -25,10 +25,7 @@ class DataProcessor {
 
   async getAllData() {
     try {
-      const [todo, user] = await Promise.all([
-        this.apiService.fetchTodo(),
-        this.apiService.fetchUser()
-      ]);
+      const [todo, user] = await Promise.all([this.apiService.fetchTodo(), this.apiService.fetchUser()]);
 
       console.log("Результат Promise.all (обидва):", { todo, user });
       return { todo, user };
@@ -39,10 +36,7 @@ class DataProcessor {
 
   async getFastestData() {
     try {
-      const winner = await Promise.race([
-        this.apiService.fetchTodo(),
-        this.apiService.fetchUser()
-      ]);
+      const winner = await Promise.race([this.apiService.fetchTodo(), this.apiService.fetchUser()]);
 
       console.log("Результат Promise.race (найшвидший):", winner);
       return winner;

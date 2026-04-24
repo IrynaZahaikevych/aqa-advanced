@@ -17,31 +17,33 @@
 
 // export default EBook;
 
-import Book from './Book.js';
+import Book from "./Book.js";
 
 class EBook extends Book {
-    constructor(title, author, year, fileFormat) {
-        super(title, author, year);
-        this.fileFormat = fileFormat;
-    }
+  constructor(title, author, year, fileFormat) {
+    super(title, author, year);
+    this.fileFormat = fileFormat;
+  }
 
-    get fileFormat() { return this._fileFormat; }
-    set fileFormat(value) {
-        const validFormats = ['PDF', 'EPUB', 'MOBI'];
-        if (!validFormats.includes(value.toUpperCase())) {
-            throw new Error("Непідтримуваний формат файлу");
-        }
-        this._fileFormat = value;
+  get fileFormat() {
+    return this._fileFormat;
+  }
+  set fileFormat(value) {
+    const validFormats = ["PDF", "EPUB", "MOBI"];
+    if (!validFormats.includes(value.toUpperCase())) {
+      throw new Error("Непідтримуваний формат файлу");
     }
+    this._fileFormat = value;
+  }
 
-    printInfo() {
-        console.log(`"${this.title}" was written by ${this.author} in ${this.year}. Format: ${this.fileFormat}.`);
-    }
+  printInfo() {
+    console.log(`"${this.title}" was written by ${this.author} in ${this.year}. Format: ${this.fileFormat}.`);
+  }
 
-    // Статичний метод для створення EBook з Book
-    static fromBook(bookInstance, fileFormat) {
-        return new EBook(bookInstance.title, bookInstance.author, bookInstance.year, fileFormat);
-    }
+  // Статичний метод для створення EBook з Book
+  static fromBook(bookInstance, fileFormat) {
+    return new EBook(bookInstance.title, bookInstance.author, bookInstance.year, fileFormat);
+  }
 }
 
 export default EBook;

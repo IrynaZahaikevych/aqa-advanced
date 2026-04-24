@@ -5,6 +5,5 @@ const combinedArray = firstArray.concat(secondArray);
 
 console.log(combinedArray);
 
-
 // Якщо потрібно вивести у формі масиву і в один рядок:
-console.log(`[${combinedArray.join(', ')}]`);
+console.log(`[${combinedArray.join(", ")}]`);

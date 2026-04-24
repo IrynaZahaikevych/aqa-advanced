@@ -5,13 +5,13 @@ let negativeNumbers = 0;
 let zeroNumbers = 0;
 
 for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] > 0) {
-        positiveNumbers++;
-    } else if (numbers[i] < 0) {
-        negativeNumbers++;
-    } else {
-        zeroNumbers++;
-    }
+  if (numbers[i] > 0) {
+    positiveNumbers++;
+  } else if (numbers[i] < 0) {
+    negativeNumbers++;
+  } else {
+    zeroNumbers++;
+  }
 }
 
 console.log(`Кількість позитивних чисел: ${positiveNumbers}`);
