@@ -1,36 +1,41 @@
 {
-	"name": "aqa-advanced",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"type": "module",
-	"devDependencies": {
-		"@eslint/js": "^10.0.1",
-		"eslint": "^10.2.0",
-		"globals": "^17.5.0",
-		"husky": "^9.1.7",
-		"lint-staged": "^16.4.0",
-		"prettier": "3.8.3"
-	},
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"prepare": "husky"
-	},
-	"lint-staged": {
-		"**/*.{js,jsx,ts,tsx}": [
-			"eslint --fix",
-			"prettier --write"
-		]
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/IrynaZahaikevych/aqa-advanced.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/IrynaZahaikevych/aqa-advanced/issues"
-	},
-	"homepage": "https://github.com/IrynaZahaikevych/aqa-advanced#readme"
+  "name": "aqa-advanced",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.5.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "3.8.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IrynaZahaikevych/aqa-advanced.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IrynaZahaikevych/aqa-advanced/issues"
+  },
+  "homepage": "https://github.com/IrynaZahaikevych/aqa-advanced#readme",
+  "dependencies": {
+    "axios": "^1.15.2",
+    "jest": "^30.3.0"
+  }
 }
